@@ -47,6 +47,9 @@
 
                                 if( $postlist->have_posts() ):
                                     while( $postlist->have_posts() ) : $postlist->the_post();
+                                    get_template_parts('parts/content', 'latest-news');
+                                endwhile;
+                                wp_reset_postdata();
                                     ?>
                                     <article class="latest-news">
                                         <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'large' ); ?></a>
@@ -62,7 +65,7 @@
                                         <?php the_excerpt(); ?>
                                     </article>
                                     <?php
-                                    endwhile;
+                                   
                                     wp_reset_postdata();
                                 else: ?>
                                     <p>Nothing yet to be displayed!</p>
