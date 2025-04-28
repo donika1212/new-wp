@@ -5,8 +5,13 @@
         <div id="content" class="site-content">
             <div id="primary" class="content-area">
                 <main id="main" class="site-main">
+<<<<<<< HEAD
                     <?php the_archive_title('<h1 class="archive-title">', '</h1>');?>
                     <?php the_archive_description('<div class="archive-description">', '</div>')?>
+=======
+                    <?php  the_archive_title('<h1> class="archive-title">',' </h1>')  ?>
+                    <?php  the_archive_description('<div> class="archive_description">', '</div>')     ?>
+>>>>>>> 7a26ce4b71e1b33cbd32958dc50a54b5563f8a6e
                     <div class="container">
                         <div class="blog-items">
                             <?php 
@@ -24,6 +29,7 @@
                                             <?php the_excerpt(); ?>
                                         </article>
                                     <?php
+<<<<<<< HEAD
                                     endwhile;?>
                                     <div class="wpdevs-pagination">
                                         <div class="pages new">
@@ -34,6 +40,9 @@
                                         </div>
                                     </div>
                                     <?php
+=======
+                                    endwhile;
+>>>>>>> 7a26ce4b71e1b33cbd32958dc50a54b5563f8a6e
                                 else: ?>
                                     <p>Nothing yet to be displayed!</p>
                             <?php endif; ?>                                
@@ -43,4 +52,8 @@
                 </main>
             </div>
         </div>
+<<<<<<< HEAD
 <?php get_footer(); ?>
+=======
+<?php get_footer(); ?>0
+>>>>>>> 7a26ce4b71e1b33cbd32958dc50a54b5563f8a6e

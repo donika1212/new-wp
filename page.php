@@ -9,9 +9,15 @@
                         <div class="page-item">
                             <?php 
                                 while( have_posts() ) : the_post();
+<<<<<<< HEAD
                                
                                 get_template_part('parts/content','page' ) ;   
                                 
+=======
+          
+                                   get_template_part('parts/content', 'page'); 
+                
+>>>>>>> 7a26ce4b71e1b33cbd32958dc50a54b5563f8a6e
                                 endwhile;
                             ?>                                
                         </div>

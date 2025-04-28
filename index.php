@@ -11,6 +11,7 @@
                             <?php 
                                 if( have_posts() ):
                                     while( have_posts() ) : the_post();
+<<<<<<< HEAD
                                   get_template_part('parts/content');
                                     endwhile;?>
                                     <div class="wpdevs-pagination">
@@ -22,6 +23,12 @@
                                         </div>
                                     </div>
                                     <?php
+=======
+                                
+                                   get_template_part('parts/contnt');
+                                 
+                                    endwhile;
+>>>>>>> 7a26ce4b71e1b33cbd32958dc50a54b5563f8a6e
                                 else: ?>
                                     <p>Nothing yet to be displayed!</p>
                             <?php endif; ?>                                
